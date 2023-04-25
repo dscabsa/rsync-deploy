@@ -1,7 +1,7 @@
-FROM debian:stable-slim
+FROM debian:11.6-slim
 
-RUN apt update
-RUN apt -yq install rsync openssh-client
+RUN apt-get update
+RUN apt-get -yq install rsync openssh-client
 
 
 # Label
